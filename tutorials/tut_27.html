@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Visibility and z-index</title>
+    <style>
+        /* visibility: visible (default), hidden */
+        /* Hides the element while keeping its space reserved */
+        /* whereas display: none does not reserve the space */
+
+        /* z-index: determines its position in layers */
+        /* if two elements are overlapping, 
+            then the element having higher value of z-index
+            will appear on top
+            NOTE: z-index only works on positioned elements
+                ie position: absolute, relative, sticky, fixed */
+        .box {
+            width: 170px;
+            height: 170px;
+            border: 2px solid;
+        }
+        #box1 {
+            background-color: green;
+        }
+        #box2 {
+            background-color: red;
+            visibility: hidden;
+        }
+        /* Here box3 and box4 are overlapping */
+        /* and since box4 has higher z-index it will appear on top of box3 */
+        #box3 {
+            background-color: blue;
+            position: relative;
+            top: 20px;
+            z-index: 3;
+        }
+        #box4 {
+            background-color: yellow;
+            position: relative;
+            top: 2px;
+            z-index: 20;
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+    <div class="box" id="box4"></div>
+</body>
+</html>

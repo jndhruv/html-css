@@ -1,0 +1,28 @@
+* {
+    font-size: large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.navbar {
+    background-color: black;
+    display: inline-block;
+    width: 8%;
+    border-radius: 15px;
+    box-sizing: border-box;
+}
+.navbar ul{
+    list-style: none;
+    padding: 0px 15px;
+    margin: 12px 0px;
+}
+.navbar ul li {
+    padding: 30px 5px;
+    border-radius: 10px;
+}
+.navbar ul li:hover {
+    background-color: gray;
+}
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+}

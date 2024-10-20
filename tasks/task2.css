@@ -1,0 +1,24 @@
+table, th, td{
+    border: 2px solid black;
+    width: 25%;
+    border-collapse: collapse;
+}
+.section {
+    padding: 2px 5px;
+    box-sizing: border-box;
+}
+#contact {
+    background-color: antiquewhite;
+}
+#education {
+    background-color: rgb(192, 248, 255);
+}
+#workExp {
+    background-color: rgb(249, 205, 205);
+}
+#skills {
+    background-color: rgb(220, 248, 220);
+}
+.heading{
+    text-align: center;
+}

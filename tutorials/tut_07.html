@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lists and tables</title>
+</head>
+<body>
+
+    <!-- Lists:
+        Unordered list: a list in symbolic bullets
+            <ul>
+                <li>Item</li>
+            </ul>
+        Attributes:
+            type=""     : shape of bullet. ="disc","square","circle"
+    -->
+    <ul type="circle">
+        <li>This is the first item.</li>
+        <li>The second item.</li>
+    </ul>
+
+    <!-- Ordered list: list with numbering
+            <ol>
+                <li>Item</li>
+            </ol>
+        Attributes:
+            type=""     : type of numbering
+                        : ="1","A","a","I","i"
+    -->
+    <ol type=""">
+        <li>First.</li>
+        <li>Second.</li>
+    </ol>
+
+    <!-- Tables
+        <table>
+            <thead>
+                <tr>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <table>     : marks the start of the table
+        <thead>     : head of thr table, ie column headings
+        <tr>        : inserting a row
+        <th>        : table heading
+        <tbody>     : body of the table, ie the rest of the table excluding heading
+        <td>        : table row entry
+    -->
+
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Course</th>
+            </tr>
+            <tr>
+                <th>(int)</th>
+                <th>(string)</th>
+                <th>(string)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>101</td>
+                <td>Dhruv</td>
+                <td>BTech</td>
+            </tr>
+            <tr>
+                <td>102</td>
+                <td>Udit</td>
+                <td>Design</td>
+            </tr>
+            <tr>
+                <td>103</td>
+                <td>Yaksh</td>
+                <td>Bsc. IT</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

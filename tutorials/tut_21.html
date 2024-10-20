@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<!--Notes:
+margin: auto                automatically alligns the element to the center.
+float: left/right;          the element starts to float towards the given direction
+clear: left/right/both;     the element would not be overlapped by floating elements of the given direction or both
+text-align: left/right/centre/justify
+-->
+
+<head>
+    <title>Alignment</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Ubuntu;
+        }
+
+        .container {
+            width: 1000px;
+            border: 3px solid black;
+            margin: auto;
+            background-color: rgb(198, 3, 3);
+        }
+
+        .item {
+            border: 2px solid gray;
+            margin: auto;
+            padding: 10px;
+            background-color: bisque;
+        }
+
+        #fruits {
+            float: left;
+            width: 45%;
+        }
+
+        #computer {
+            float:right;
+            width: 45%;
+        }
+
+        #stationary {
+            clear: both;
+            width: 100%;
+        }
+        
+        p, h3{
+            text-align: justify;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="fruits" class="item">
+            <h3>Fruits</h3>
+            <p id="fruitspara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, pariatur
+                inventore voluptas fuga iste vero assumenda obcaecati id quibusdam vitae quasi architecto aspernatur non
+                nulla! Officia animi quas commodi nam? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit,
+                quas harum! Tempore nemo ut maiores harum dolorem, obcaecati sed debitis ratione laudantium quisquam
+                soluta laborum deleniti architecto alias reprehenderit sequi? Laborum id soluta recusandae!</p>
+        </div>
+        <div id="computer" class="item">
+            <h3>Computer</h3>
+            <p id="computerpa   ra" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti,
+                pariatur
+                inventore voluptas fuga iste vero assumenda obcaecati id quibusdam vitae quasi architecto aspernatur non
+                nulla! Officia animi quas commodi nam? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat,
+                animi laboriosam dolorem quis laudantium atque perferendis est accusantium nulla quod itaque commodi.
+                Magnam aliquam harum autem, laboriosam accusantium quidem consequuntur architecto vero! Pariatur,
+                facere.</p>
+        </div>
+        <div id="stationary" class="item">
+            <h3>Stationary</h3>
+            <p id="stationarypara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti,
+                pariatur
+                inventore voluptas fuga iste vero assumenda obcaecati id quibusdam vitae quasi architecto aspernatur non
+                nulla! Officia animi quas commodi nam?</p>
+        </div>
+    </div>
+</body>
+
+</html>

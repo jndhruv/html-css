@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fonts in CSS</title>
+    <style>
+        /* Font properties
+        font-family
+        font-size
+        line-height
+        font-weight - bold etc 
+        font-style  - italic etc
+        */
+        p{
+            font-family:Helvetica, sans-serif;
+            font-size: 20px; /* pixel (px) = 1/96 of an inch. */
+            line-height: 10em; /* em = parent font size x multiplier. eg  */
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Fonts:
+        - Web safe fonts - fonts that are preinstalled on most systems
+        - Web fonts - installed via web
+        - Font stacks:
+            List of fonts a user can define.
+            It will iterate through the list 
+            and choose the first installed font.
+        -->
+    <h1>Hello world</h1>
+    <p>This is a paragraph tag.</p>
+</body>
+</html>

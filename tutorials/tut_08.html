@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <h1>An HTML Form</h1>
+
+    <!-- Form <form></form>
+        action=""       : points to the script file which handles the submitted form data, e.g. backend.php
+        
+        Tags:
+        <input>         : object in which the user enters data
+            type=""     : type of entry
+                - number, text, date, email, submit, radio, checkbox, reset
+        <textarea>      : big text entry box
+            rows=""     : predefine textarea length
+            cols=""     : predefine textarea width
+        <label for=id>  : creates a label for the given id
+        <select>        : creates a drop menu
+            <options>   : add an option in select menu
+    -->
+    <form action="backend.php">
+        <div>
+            <label for="id">ID:</label>
+            <input type="number" name="myID" id="id">
+        </div>
+        <div>
+            Name: <input type="text" name="myName">
+        </div>
+        <div>
+            Course: <input type="text" name="myCourse">
+        </div>
+        <div>
+            Date: <input type="date" name="myDate">
+        </div>
+        <div>
+            Email: <input type="email" name="myEmail">
+        </div>
+        <div>
+            Gender: Male<input type="radio" name="myGender"> Female<input type="radio" name="myGender"> 
+            Other<input type="radio" name="myGender">
+        </div>
+        <div>
+            <label for="adm">Admission done?</label>
+            <input type="checkbox" name="myAdm" id="adm"> <!--checked - to keep the checkbox checked by default-->
+        </div>
+        <div>
+            About you: <textarea name="myText" rows="5"></textarea>
+        </div>
+        <div>
+            <label for="year">Year:</label>
+            <select name="myYear" id="year">
+                <option value="select" selected>Select</option>
+                <option value="first">1st</option>
+                <option value="second">2nd</option>
+                <option value="third">3rd</option>
+                <option value="fourth">4th</option>
+            </select>
+        </div>
+        <div>
+            <input type="submit" value="Submit now">  <input type="reset" value="Reset now">
+        </div>
+    </form>
+</body>
+</html>

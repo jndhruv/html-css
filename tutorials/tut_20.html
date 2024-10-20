@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Box Model, Margin and Padding</title>
+    <style>
+        /*
+        margin --> border --> padding --> element
+        */
+        
+        /*Padding:
+        padding: value;                 (applies padding to all sides)
+        padding-top/right/bottom/left:  (applies padding to specific side)
+        padding: top right bottom left; (shorthand)
+        padding: y x;
+        All the above can be applied for margin as well
+        */
+        /*
+        Use box-sizing
+        */
+        .container{
+            background-color: rgb(255, 234, 206);
+            border: 2px solid green;
+            padding: 40px 20px;
+            margin: 10px;
+            border-radius: 10px;
+            width: 500px;
+            box-sizing: border-box;
+        }
+        body{
+            background-color:rgb(213, 253, 255);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>This is the heading</h3>
+        <p id="first">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur tempore quae itaque.</p>
+    </div>
+
+    <div class="container">
+        <h3>This is the heading</h3>
+        <p id="second">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur tempore quae itaque.</p>
+    </div>
+
+    <div class="container">
+        <h3>This is the heading</h3>
+        <p id="third">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur tempore quae itaque.</p>
+    </div>
+</body>
+</html>

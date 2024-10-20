@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Height, width, borders and backgrounds</title>
+    <style>
+        /* Key takeaways: 
+        
+        height: sets the height of the markup
+        width: sets the width of the markup
+
+        Borders:
+            - border-width
+            - border-style
+            - border-color
+            - border-radius
+            - border: width style color             (altogether in one line)
+            - border-top/bottom/left/right          (gives border to specific side of the box)
+            - border-top/bottom-left/right-radius   (gives border radius to specific corner)
+        */
+        #testPara{
+            background-color: red;
+            height: 200px;
+            width: 500px;
+            border-width: 10px;
+            border-color: blue;
+            border-style: solid;
+            border-radius: 15px;
+            border: 2px solid green; /* width style color : all in one line */
+        }
+
+        /* Background:
+            - background-image: path
+            - background-repeat: repeat-x/repeat-y/no-repeat
+            - background-position: x y
+                x y can be center, left, right, bottom, top, or specific values in px
+        */
+
+    </style>
+</head>
+<body>
+    <p id="testPara">This is a paragraph markup</p>
+    <p id="para2">Second paragraph</p>
+    <p id="para3">Third paragraph</p>
+</body>
+</html>
