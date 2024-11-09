@@ -28,5 +28,15 @@
 25. CSS Position
 26. Webpage using all concepts learnt till now
 27. Visibility and z-index
-
-rupesh7399
+28. Flexbox
+29. em, rem, vh and vw units
+30. Media Queries
+31. CSS Selectors: targeting, >, +
+32. Attribute and nth-child pseudo-selectors
+33. ::before and ::after pseudo-selectors
+34. box-shadow and text-
+35. Variables & Custom properties
+36. Animations
+37. Transitions
+38. Transforms
+39. Grid

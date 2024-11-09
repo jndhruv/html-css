@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Transform</title>
+    <style>
+        .container {
+            width: 100px;
+            height: 100px;
+            background-color: lightblue;
+            margin: 200px auto;
+            transition: transform 1s ease-in-out;
+        }
+
+        .container:hover {
+            transform: rotate(225deg);
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: lightblue;
+            margin: 200px auto;
+        }
+
+
+        /* 3d by gpt */
+        .scene {
+            perspective: 1000px;
+        }
+        
+        .card {
+            width: 200px;
+            height: 300px;
+            transform-style: preserve-3d;
+            transform: rotateY(0deg);
+            transition: transform 0.5s;
+        }
+
+        .card:hover {
+            transform: rotateY(180deg);
+        }
+
+        .card-face {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+        }
+
+        .front {
+            background-color: #ffcc00;
+        }
+
+        .back {
+            background-color: #0099cc;
+            transform: rotateY(180deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container"></div>
+    <div class="box"></div>
+
+
+    <!-- 3d by gpt -->
+    <div class="scene">
+        <div class="card">
+            <div class="card-face front">Front</div>
+            <div class="card-face back">Back</div>
+        </div>
+    </div>
+
+</body>
+
+</html>
