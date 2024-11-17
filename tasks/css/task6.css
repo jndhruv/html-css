@@ -1,0 +1,42 @@
+* {
+    font-family: Arial;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    padding: 10px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-column {
+    flex-shrink: 0;
+    background-color: black;
+    border: 1px solid;
+}
+
+.left-column ul {
+    list-style: none;
+    padding: 100px;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.left-column ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.right-column {
+    border: 1px solid;
+    padding: 20px;
+}
