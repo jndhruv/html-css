@@ -86,7 +86,7 @@ Bonus: Add a background color to the left column to make it look like a sidebar.
         - An image at the top.
         - A title below the image.
         - A description under the title.
-        - A bu􀆩on at the bottom.
+        - A button at the bottom.
 2. Style the card using CSS:
     - Add a border and shadow to the card.
     - Make the button change color when hovered.
